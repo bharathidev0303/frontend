@@ -4,4 +4,6 @@
 .input-primary {
     @apply w-full rounded border-2 placeholder-opacity-50 px-3 py-1 text-sm cursor-pointer lg:text-base focus:outline-none;
   }
-
+.select-primary {
+    @apply w-full rounded border-2 placeholder-opacity-50 px-3 py-1 text-sm cursor-pointer lg:text-base focus:outline-none;
+}
