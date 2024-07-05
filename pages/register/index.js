@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../../public/pharmarack.png';
+import { useRouter } from 'next/router'; 
 import axios from 'axios';
 import Buttons from '../controls/Buttons';
 import InputFields from '../controls/InputFields';
@@ -9,6 +10,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 const moment = require('moment');
 
 const Register = () => {
+    const router = useRouter(); 
+
     const [state, setState] = useState({
         firstName: "",
         lastName: "",
@@ -156,6 +159,7 @@ const Register = () => {
         try {
             const response = await axios.post('http://localhost:3000/api/user/register', userData);
             console.log('Registration successful:', response.data);
+            router.push('/'); 
         } catch (error) {
             console.error('Error during registration:', error.response.data);
         }
