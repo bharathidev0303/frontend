@@ -8,8 +8,10 @@ module.exports = {
       colors: {
         primary: "#0000FF",
         secondary: "#FF0000",
-        whitecolor: "#FFFFFF",
-        'body-color': '#edf1f7',
+        whitecolor: "#999",
+        "body-color": "#edf1f7",
+        sidebarcolor: "#1C2324",
+        hovercolor: "#2196f3",
       },
     },
   },
