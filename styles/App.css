@@ -13,3 +13,7 @@
     background-color: #777;
     outline: 1px solid #777;
 }
+
+.react-datepicker-wrapper{
+    width: 100%;
+}
